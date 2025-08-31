@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="multiply"
+    tools:context=".onboard_1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/seconmd" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="190dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:fontFamily="serif"
+            android:text="Discover Vehicles"
+            android:textColor="#1278CA"
+            android:textSize="34sp"
+            app:autoSizeTextType="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="160dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Browse cars, bikes, and vans"
+            android:textColor="#0C63A6"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="120dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="for rent in your city"
+            android:textColor="#075CA0"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="700dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn1onScreen1"
+            android:layout_width="38dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="#168AED"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" />
+
+        <Button
+            android:id="@+id/btn2onScreen1"
+            android:layout_width="38dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="@android:color/transparent"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            app:strokeColor="#168AED"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/btn3onScreen1"
+            android:layout_width="38dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="@android:color/transparent"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            app:strokeColor="#168AED"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/btnOnscreen1Skip"
+            android:layout_width="80dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="#168AED"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:text="Skip" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
