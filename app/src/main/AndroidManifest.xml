@@ -11,51 +11,57 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Vego_App">
+
+        <!-- MainActivity should be the LAUNCHER -->
         <activity
-            android:name=".profile"
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other activities (remove LAUNCHER from onboard_1) -->
+        <activity
+            android:name=".onboard_1"
             android:exported="false" />
         <activity
-            android:name=".booking"
-            android:exported="false" />
-        <activity
-            android:name=".search"
-            android:exported="false" />
-        <activity
-            android:name=".vehicle_info"
-            android:exported="false" />
-        <activity
-            android:name=".Ghoome"
-            android:exported="false" />
-        <activity
-            android:name=".Home"
-            android:exported="false" />
-        <activity
-            android:name=".signup_page"
-            android:exported="false" />
-        <activity
-            android:name=".LoginPage"
+            android:name=".onboard_2"
             android:exported="false" />
         <activity
             android:name=".onboard_3"
             android:exported="false" />
         <activity
             android:name=".onboard3"
-            android:exported="false" /> <!-- First screen (Launcher) -->
+            android:exported="false" />
         <activity
-            android:name=".onboard_1"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> <!-- Second screen -->
+            android:name=".LoginPage"
+            android:exported="false" />
         <activity
-            android:name=".onboard_2"
-            android:exported="true" /> <!-- Your main activity (optional, can be opened later) -->
+            android:name=".signup_page"
+            android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Ghoome"
+            android:exported="false" />
+        <activity
+            android:name=".vehicle_info"
+            android:exported="false" />
+        <activity
+            android:name=".search"
+            android:exported="false" />
+        <activity
+            android:name=".booking"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".book_paymet"
+            android:exported="false" />
     </application>
 
 </manifest>

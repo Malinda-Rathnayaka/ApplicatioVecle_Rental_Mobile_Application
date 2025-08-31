@@ -21,8 +21,8 @@ class profile : AppCompatActivity() {
             startActivity(Intent(this, Ghoome::class.java))
         }
 
-        btnBack.setOnClickListener {
-            startActivity(Intent(this, signup_page::class.java))
+        logout.setOnClickListener {
+            startActivity(Intent(this, LoginPage::class.java))
         }
 
 

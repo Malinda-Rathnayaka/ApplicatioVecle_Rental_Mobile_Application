@@ -2,6 +2,7 @@ package com.example.vego_app
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -12,6 +13,8 @@ class Ghoome : AppCompatActivity() {
         setContentView(R.layout.activity_ghoome)
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        val details = findViewById<Button>(R.id.btnDetails)
+        val book = findViewById<Button>(R.id.btnBook)
 
         bottomNav.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -40,6 +43,13 @@ class Ghoome : AppCompatActivity() {
                     true
                 }
             }
+        }
+
+        details.setOnClickListener {
+            startActivity(Intent(this, vehicle_info::class.java))
+        }
+        book.setOnClickListener {
+            startActivity(Intent(this, book_paymet::class.java))
         }
     }
 }

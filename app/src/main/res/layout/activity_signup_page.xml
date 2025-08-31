@@ -229,15 +229,16 @@
 
             <!-- Google Sign Up Button -->
             <Button
+                android:id="@+id/btnGoogle"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign up with Google"
-                android:textAllCaps="false"
                 android:backgroundTint="@android:color/transparent"
-                android:textColor="#4285F4"
                 android:drawableLeft="@drawable/goog_icon"
                 android:drawablePadding="8dp"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+                android:text="Sign up with Google"
+                android:textAllCaps="false"
+                android:textColor="#4285F4" />
 
         </LinearLayout>
     </ScrollView>
